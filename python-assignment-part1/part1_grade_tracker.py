@@ -46,3 +46,83 @@ for student in cleaned_students:
     if student["roll"] == 103:
         print("Name in ALL CAPS :", student["name"].upper())
         print("Name in lowercase:", student["name"].lower())
+
+       # Initial data
+student_name = "Ayesha Sharma"
+subjects     = ["Math", "Physics", "CS", "English", "Chemistry"]
+marks        = [88, 72, 95, 60, 78]
+
+# Function to assign grade
+def get_grade(score):
+    if 90 <= score <= 100:
+        return "A+"
+    elif 80 <= score <= 89:
+        return "A"
+    elif 70 <= score <= 79:
+        return "B"
+    elif 60 <= score <= 69:
+        return "C"
+    else:
+        return "F"
+
+print(f"\nStudent: {student_name}")
+print("\n--- Subject-wise Performance ---")
+
+# Using for loop
+for sub, mark in zip(subjects, marks):
+    grade = get_grade(mark)
+    print(f"{sub:10} : {mark} ({grade})")
+
+# Calculations
+total = sum(marks)
+average = round(total / len(marks), 2)
+
+# Highest and lowest
+max_mark = max(marks)
+min_mark = min(marks)
+
+max_subject = subjects[marks.index(max_mark)]
+min_subject = subjects[marks.index(min_mark)]
+
+print("\n--- Summary ---")
+print(f"Total Marks   : {total}")
+print(f"Average Marks : {average}")
+print(f"Highest       : {max_subject} ({max_mark})")
+print(f"Lowest        : {min_subject} ({min_mark})")
+
+# While loop for adding new subjects
+new_count = 0
+
+print("\n--- Add New Subjects (type 'done' to stop) ---")
+
+while True:
+    new_subject = input("Enter subject name: ").strip()
+    
+    if new_subject.lower() == "done":
+        break
+    
+    mark_input = input(f"Enter marks for {new_subject}: ").strip()
+    
+    # Validation
+    if not mark_input.isdigit():
+        print("⚠️ Invalid input! Marks must be a number.\n")
+        continue
+    
+    mark = int(mark_input)
+    
+    if mark < 0 or mark > 100:
+        print("⚠️ Marks must be between 0 and 100.\n")
+        continue
+    
+    # Add valid data
+    subjects.append(new_subject)
+    marks.append(mark)
+    new_count += 1
+    print("✓ Added successfully!\n")
+
+# Updated calculations
+updated_average = round(sum(marks) / len(marks), 2)
+
+print("\n--- Final Summary ---")
+print(f"New Subjects Added : {new_count}")
+print(f"Updated Average    : {updated_average}") 

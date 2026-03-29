@@ -119,3 +119,38 @@ Marks   : [88, 72, 95, 60, 78]
 
 Name in ALL CAPS : PRIYA NAIR
 Name in lowercase: priya nair
+
+# 📊 Student Performance Analyzer & Marks Entry System
+
+## 📌 Overview
+This project is a Python-based student performance analyzer that:
+
+- Displays subject-wise marks with grades
+- Calculates key performance metrics
+- Identifies highest and lowest scoring subjects
+- Allows dynamic addition of new subjects using user input
+- Validates inputs to ensure data accuracy
+
+---
+
+## 🧾 Initial Data
+
+```python
+student_name = "Ayesha Sharma"
+subjects     = ["Math", "Physics", "CS", "English", "Chemistry"]
+marks        = [88, 72, 95, 60, 78]
+## sample Output
+Student: Ayesha Sharma
+
+--- Subject-wise Performance ---
+Math       : 88 (A)
+Physics    : 72 (B)
+CS         : 95 (A+)
+English    : 60 (C)
+Chemistry  : 78 (B)
+
+--- Summary ---
+Total Marks   : 393
+Average Marks : 78.6
+Highest       : CS (95)
+Lowest        : English (60)
