@@ -126,3 +126,48 @@ updated_average = round(sum(marks) / len(marks), 2)
 print("\n--- Final Summary ---")
 print(f"New Subjects Added : {new_count}")
 print(f"Updated Average    : {updated_average}") 
+
+class_data = [
+    ("Ayesha Sharma",  [88, 72, 95, 60, 78]),
+    ("Rohit Verma",    [55, 68, 49, 72, 61]),
+    ("Priya Nair",     [91, 85, 88, 94, 79]),
+    ("Karan Mehta",    [40, 55, 38, 62, 50]),
+    ("Sneha Pillai",   [75, 80, 70, 68, 85]),
+]
+
+print("Name              | Average | Status")
+print("----------------------------------------")
+
+pass_count = 0
+fail_count = 0
+averages = []
+topper_name = ""
+topper_avg = 0
+
+for name, marks in class_data:
+    avg = round(sum(marks) / len(marks), 2)
+    averages.append(avg)
+    
+    status = "Pass" if avg >= 60 else "Fail"
+    
+    if status == "Pass":
+        pass_count += 1
+    else:
+        fail_count += 1
+    
+    # Track topper
+    if avg > topper_avg:
+        topper_avg = avg
+        topper_name = name
+    
+    print(f"{name:<18} | {avg:>7.2f} | {status}")
+
+# Class average
+class_avg = round(sum(averages) / len(averages), 2)
+
+print("\n--- Summary ---")
+print(f"Passed Students : {pass_count}")
+print(f"Failed Students : {fail_count}")
+print(f"Class Topper    : {topper_name} ({topper_avg})")
+print(f"Class Average   : {class_avg}")
+

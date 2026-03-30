@@ -154,3 +154,22 @@ Total Marks   : 393
 Average Marks : 78.6
 Highest       : CS (95)
 Lowest        : English (60)
+
+# 📊 Class Performance Report System
+
+## 📌 Overview
+This project is a Python-based system that analyzes student performance for an entire class. It calculates averages, assigns pass/fail status, identifies the class topper, and computes overall class statistics.
+
+---
+
+## 🧾 Dataset
+
+```python
+class_data = [
+    ("Ayesha Sharma",  [88, 72, 95, 60, 78]),
+    ("Rohit Verma",    [55, 68, 49, 72, 61]),
+    ("Priya Nair",     [91, 85, 88, 94, 79]),
+    ("Karan Mehta",    [40, 55, 38, 62, 50]),
+    ("Sneha Pillai",   [75, 80, 70, 68, 85]),
+]
+
