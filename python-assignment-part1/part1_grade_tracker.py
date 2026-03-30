@@ -171,3 +171,40 @@ print(f"Failed Students : {fail_count}")
 print(f"Class Topper    : {topper_name} ({topper_avg})")
 print(f"Class Average   : {class_avg}")
 
+essay = "  python is a versatile language. it supports object oriented, functional, and procedural programming. python is widely used in data science and machine learning.  "
+
+# Step 1: Strip whitespace
+clean_essay = essay.strip()
+print("1. Clean Essay:")
+print(clean_essay)
+print()
+
+# Step 2: Convert to Title Case
+title_case = clean_essay.title()
+print("2. Title Case:")
+print(title_case)
+print()
+
+# Step 3: Count occurrences of "python"
+count_python = clean_essay.count("python")
+print("3. Count of 'python':", count_python)
+print()
+
+# Step 4: Replace "python" with "Python 🐍"
+replaced_text = clean_essay.replace("python", "Python 🐍")
+print("4. Replaced Text:")
+print(replaced_text)
+print()
+
+# Step 5: Split into sentences
+sentences = clean_essay.split(". ")
+print("5. Sentences List:")
+print(sentences)
+print()
+
+# Step 6: Print numbered sentences
+print("6. Numbered Sentences:")
+for i, sentence in enumerate(sentences, start=1):
+    if not sentence.endswith("."):
+        sentence += "."
+    print(f"{i}. {sentence}")

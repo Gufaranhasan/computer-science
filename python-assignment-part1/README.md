@@ -173,3 +173,35 @@ class_data = [
     ("Sneha Pillai",   [75, 80, 70, 68, 85]),
 ]
 
+# 📝 Essay Text Processing & Analysis in Python
+
+## 📌 Overview
+This project demonstrates how to perform basic text processing and analysis using Python string methods.
+
+The program cleans a raw essay, transforms its format, performs word analysis, and structures the text into readable sentences.
+
+---
+
+## 🧾 Input Data
+
+```python
+essay = "  python is a versatile language. it supports object oriented, functional, and procedural programming. python is widely used in data science and machine learning.  "
+Sample Output
+1. Clean Essay:
+python is a versatile language. it supports object oriented, functional, and procedural programming. python is widely used in data science and machine learning.
+
+2. Title Case:
+Python Is A Versatile Language. It Supports Object Oriented, Functional, And Procedural Programming. Python Is Widely Used In Data Science And Machine Learning.
+
+3. Count of 'python': 2
+
+4. Replaced Text:
+Python 🐍 is a versatile language. it supports object oriented, functional, and procedural programming. Python 🐍 is widely used in data science and machine learning.
+
+5. Sentences List:
+['python is a versatile language', 'it supports object oriented, functional, and procedural programming', 'python is widely used in data science and machine learning.']
+
+6. Numbered Sentences:
+1. python is a versatile language.
+2. it supports object oriented, functional, and procedural programming.
+3. python is widely used in data science and machine learning.
