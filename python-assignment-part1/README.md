@@ -56,18 +56,6 @@ For each student record:
 
 ---
 
-## Technologies Used
-
-- Python 3
-- Core concepts:
-  - Strings
-  - Lists
-  - Loops
-  - Dictionaries
-  - Functions (`map`, `split`, `strip`, `title`)
-
----
-
 ## Code
 
 ```python
@@ -120,9 +108,9 @@ Marks   : [88, 72, 95, 60, 78]
 Name in ALL CAPS : PRIYA NAIR
 Name in lowercase: priya nair
 
-# 📊 Student Performance Analyzer & Marks Entry System
+# Student Performance Analyzer & Marks Entry System
 
-## 📌 Overview
+## Overview
 This project is a Python-based student performance analyzer that:
 
 - Displays subject-wise marks with grades
@@ -133,7 +121,7 @@ This project is a Python-based student performance analyzer that:
 
 ---
 
-## 🧾 Initial Data
+## Initial Data
 
 ```python
 student_name = "Ayesha Sharma"
@@ -155,14 +143,14 @@ Average Marks : 78.6
 Highest       : CS (95)
 Lowest        : English (60)
 
-# 📊 Class Performance Report System
+# Class Performance Report System
 
-## 📌 Overview
+## Overview
 This project is a Python-based system that analyzes student performance for an entire class. It calculates averages, assigns pass/fail status, identifies the class topper, and computes overall class statistics.
 
 ---
 
-## 🧾 Dataset
+## Dataset
 
 ```python
 class_data = [
@@ -173,16 +161,16 @@ class_data = [
     ("Sneha Pillai",   [75, 80, 70, 68, 85]),
 ]
 
-# 📝 Essay Text Processing & Analysis in Python
+# Essay Text Processing & Analysis in Python
 
-## 📌 Overview
+## Overview
 This project demonstrates how to perform basic text processing and analysis using Python string methods.
 
 The program cleans a raw essay, transforms its format, performs word analysis, and structures the text into readable sentences.
 
 ---
 
-## 🧾 Input Data
+## Input Data
 
 ```python
 essay = "  python is a versatile language. it supports object oriented, functional, and procedural programming. python is widely used in data science and machine learning.  "
@@ -196,7 +184,7 @@ Python Is A Versatile Language. It Supports Object Oriented, Functional, And Pro
 3. Count of 'python': 2
 
 4. Replaced Text:
-Python 🐍 is a versatile language. it supports object oriented, functional, and procedural programming. Python 🐍 is widely used in data science and machine learning.
+Python is a versatile language. it supports object oriented, functional, and procedural programming. Python is widely used in data science and machine learning.
 
 5. Sentences List:
 ['python is a versatile language', 'it supports object oriented, functional, and procedural programming', 'python is widely used in data science and machine learning.']
