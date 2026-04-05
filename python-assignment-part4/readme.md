@@ -46,7 +46,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 2. Place files in the same folder:
 
 ```
-main.py
+Part4_visualization_ml.ipynb
 students.csv
 ```
 
